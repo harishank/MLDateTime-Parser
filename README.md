@@ -21,8 +21,8 @@ Initially this version supports 86 strings and have testcases.py file to test al
 
 #Demo:
 >>>import MLDateTime as dt
->>>dt.parse("now")
->>>dt.parse("today")
+>>>dt.parse("now").
+>>>dt.parse("today").
 >>>dt.parse("eod")
 >>>dt.parse("tomorrow")
 >>>dt.parse("day after tomorrow")
