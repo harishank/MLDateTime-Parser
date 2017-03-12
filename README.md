@@ -17,3 +17,14 @@ English
 
 #Testcases:
 Initially this version supports 86 strings and have testcases.py file to test all the strings
+
+
+#Demo:
+>>>import MLDateTime as dt
+>>>dt.parse("now")
+>>>dt.parse("today")
+>>>dt.parse("eod")
+>>>dt.parse("tomorrow")
+>>>dt.parse("day after tomorrow")
+>>>dt.parse("day before yesterday")
+>>>dt.parse("eom")
