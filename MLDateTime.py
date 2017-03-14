@@ -28,8 +28,11 @@ r', 'in an hour', '15 minutes from now', 'in 1 hour','harish', '1 am', '2 am',
 '3 am', '4 am', '5 am', '6 am', '7 am', '8 am', '9 am', '10 am', '11 am', '12 \
 am', '1 pm', '2 pm', '3 pm', '4 pm', '5 pm', '6 pm', '7 pm', '8 pm', '9 pm', '\
 10 pm', '11 pm', '12 pm','sunday', 'monday', 'tuesday', 'wednesday', 'thursday\
-', 'friday', 'saturday', 'XXX', 'january', 'february', 'march', 'april', 'may',
- 'june', 'july', 'august', 'september', 'october', 'november','december']
+', 'friday', 'saturday', 'XXXXVVVVVV', 'january', 'february', 'march', 'april',
+'may', 'june', 'july', 'august', 'september', 'october', 'november','december',
+'1 o\'clock', '2 o\'clock', '3 o\'clock', '4 o\'clock', '5 o\'clock', '6 o\'cl\
+ock', '7 o\'clock', '8 o\'clock', '9 o\'clock', '10 o\'clock', '11 o\'clock', 
+'12 o\'clock']
 print len(corpus)
 
 X_2 = bigram_vectorizer.fit_transform(corpus).toarray()
@@ -45,6 +48,7 @@ def parse(text):
     for i in range(len(decision[0])):
         if decision[0][i] > 0.7:
             n = i
+    #print n
     datestring=datetimeformat(n)
     return datestring
     
@@ -132,37 +136,37 @@ def datetimeformat(n):
         res= time_obj.format22('7am')
     elif n == 49:
         res= time_obj.format22('8am')
-    elif n == 50:
+    elif n == 50 or n == 94:
         res= time_obj.format22('9am')
-    elif n == 51:
+    elif n == 51 or n == 95:
         res= time_obj.format22('10am')
-    elif n == 52:
+    elif n == 52 or n == 96:
         res= time_obj.format22('11am')
     elif n == 53:
         res= time_obj.format22('12am')
-    elif n == 54:
+    elif n == 54 or n == 86:
         res= time_obj.format22('1pm')
-    elif n == 55:
+    elif n == 55 or n == 87:
         res= time_obj.format22('2pm')
-    elif n == 56:
+    elif n == 56 or n == 88:
         res= time_obj.format22('3pm')
-    elif n == 57:
+    elif n == 57 or n == 89:
         res= time_obj.format22('4pm')
-    elif n == 58:
+    elif n == 58 or n == 90:
         res= time_obj.format22('5pm')
-    elif n == 59:
+    elif n == 59 or n == 91:
         res= time_obj.format22('6pm')
-    elif n == 60:
+    elif n == 60 or n == 92:
         res= time_obj.format22('7pm')
-    elif n == 61:
+    elif n == 61 or n == 93:
         res= time_obj.format22('8pm')
-    elif n == 62:
+    elif n == 62 or n == 94:
         res= time_obj.format22('9pm')
     elif n == 63:
         res= time_obj.format22('10pm')
     elif n == 64:
         res= time_obj.format22('11pm')
-    elif n == 65:
+    elif n == 65 or n == 97:
         res= time_obj.format22('12pm')
     elif n == 66:
         res= date_obj.format23(6)
