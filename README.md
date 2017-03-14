@@ -16,10 +16,12 @@ tzlocal to reliably get local timezone.
 English
 
 #Testcases:
-Initially this version supports 86 strings and have testcases.py file to test all the strings
+Initially this version supports 96 strings and have testcases.py file to test all the strings
 
 
 #Demo:
+
+>>>import MLDateTimeParser
 >>>import MLDateTime as dt
 >>>dt.parse("now").
 >>>dt.parse("today").
@@ -28,3 +30,4 @@ Initially this version supports 86 strings and have testcases.py file to test al
 >>>dt.parse("day after tomorrow")
 >>>dt.parse("day before yesterday")
 >>>dt.parse("eom")
+>>>dt.parse("1 o'\clock")
