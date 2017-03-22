@@ -18,7 +18,8 @@ English
 #Testcases:
 Initially this version supports 96 strings and have testcases.py file to test all the strings
 
-
+#installation
+pip install MLDateTimeParser
 #Demo:
 
 >>>import MLDateTimeParser
